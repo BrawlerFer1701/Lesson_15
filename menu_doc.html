@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu dọc</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			position: relative;
+		}
+		#menu{
+			width: 200px;
+			min-height: 100px;
+			margin: auto;
+		}
+		ul{
+			list-style: none;
+		}
+		#menu ul li{
+			height: 30px;
+			background: #92FE67;
+			width: 200px;
+			padding: 0 10px;
+			border-bottom: solid 1px #B9A4A4;
+		}
+		#menu ul li ul{
+			/*width: 200px;*/
+			position: absolute;
+			left: 200px;
+			top:  0;
+			
+			display: none;
+		}
+		#menu li ul li{
+			background: #1D8232;
+			padding: 10px 0;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+			/*background: red;*/
+			line-height: 30px;
+		}
+		#menu ul li:hover ul{
+			display: block;
+		}
+		#menu ul li:hover{
+			background: #BEABAB;
+		}
+		a:hover{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+
+			<li><a href="#">&rsaquo; Trang chủ 24h</a>
+			</li>
+
+			<li><a href="#">&rsaquo; Tin tức trong ngày</a>
+				<ul id="Tintrongngay" class="sub_menu">
+					<li><a href="#">&rsaquo; Tin Hà Nội</a></li>
+					<li><a href="#">&rsaquo; Tin HCM</a></li>
+					<li><a href="#">&rsaquo; Tin Đà Nẵng</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">&rsaquo; Bóng đá</a>
+				<ul id="Bongda" class="sub_menu">
+					<li><a href="#">&rsaquo; Lịch thi đấu bóng đá</a></li>
+					<li><a href="#">&rsaquo; Video bàn thắng</a></li>
+					<li><a href="#">&rsaquo; Lịch thi đấu hôm nay</a></li>	
+				</ul>				
+			</li>
+			<li><a href="#" id="euro">&rsaquo; Euro 2020</a>
+				<ul id="Euro" class="sub_menu">
+					<li><a href="#">&rsaquo; Video highlight</a></li>
+					<li><a href="#">&rsaquo; Lịch thi đấu</a></li>
+					<li><a href="#">&rsaquo; Kết quả thi đấu</a></li>
+				</ul>
+			</li>
+			<li><a href="#">&rsaquo; Thế giới</a>
+				<ul id="TG" class="sub_menu">
+					<li><a href="#">&rsaquo; Điểm nóng</a></li>
+					<li><a href="#">&rsaquo; Quân sự</a></li>
+					<li><a href="#">&rsaquo; Thế giới động vật</a></li>		
+				</ul>
+			</li>
+
+		</ul>
+	</div>
+</body>
+</html>
